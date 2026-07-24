@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baranfiratsahin.github.io/sitemap.xml
