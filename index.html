@@ -108,7 +108,39 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--edge);color:v
 <span class="meta">VANILLA JS · CLOUDFLARE WORKERS · KV · LEAFLET · SSE · EDGE CACHE</span>
 <p><a href="https://fsahin.com/">Canlı terminali aç →</a> &nbsp;·&nbsp; <a href="https://github.com/baranfiratsahin/baranfiratsahin-worldmap">Kaynak kod →</a></p>
 
-<h2>2. Diğer sistemler</h2>
+<h2>2. Çalışma alanları — tam kapsam</h2>
+<p>Aşağıdaki alanlar, 2024 ortasından bugüne süren çalışmanın bütününü kapsar. Kişisel çalışma arşivinde bu döneme ait 126 ayrı teknik konu kayıtlıdır; en yoğun dönem 2025 yılıdır. Açık depo sayısı 60+, bazı sistemler operasyonel güvenlik veya ticari gizlilik gereği kapalı tutulur.</p>
+
+<h3>Siber güvenlik ve saldırgan güvenlik</h3>
+<p>Kali Linux üzerinde penetrasyon testi ve zafiyet taraması; Nuclei tabanlı tarama akışları ve raporlama otomasyonu; bug bounty amaçlı araç geliştirme; ağ seviyesinde derin paket incelemesi (DPI) ve engelleme mekanizmalarının analizi; şifreleme uygulamaları (uçtan uca şifreleme denemeleri, klasik şifre algoritmaları); bulut güvenliği ve kimlik doğrulama yapılandırması (MFA, erişim politikaları); zafiyet bildirimi ve doğrulama süreçleri; gizlilik sertleştirme çalışmaları. Tüm çalışmalar yalnızca yetkili değerlendirmeler kapsamındadır.</p>
+
+<h3>Canlı veri altyapıları ve coğrafi görselleştirme</h3>
+<p><a href="https://fsahin.com/">fsahin.com</a> World Terminal bugünkü sürümdür: 16 canlı akış, tek Cloudflare Worker, Workers KV, Leaflet ve dürüst hata tasarımı. Öncesinde ilk nesil canlı dünya haritası denemeleri, uydu ve hava görüntüsü işleme, tile hattı kurulumu, harita arayüz kitleri ve kenar dağıtım denemeleri yapıldı.</p>
+
+<h3>Uygulamalı yapay zeka, RAG ve ajan sistemleri</h3>
+<p>Buluta bağlanmadan çalışan yerel dil modeli (GLM-4-9B) tabanlı akıl yürütme sistemi. Erişim hattı bileşen bileşen geliştirildi: BM25 indeks kurucu, hibrit skor füzyonuyla yeniden sıralama, bağlamsal parça öneki üretimi, parça sınırı skorlama ve erişim kalitesi benchmark koşucusu. Üzerine bir soruyu çok sayıda personayla tartıştırıp çapraz doğrulayan konsey mimarisi kuruldu. Ayrıca: otonom ajan modları ve görev döngüleri, ajan istem (prompt) mühendisliği, farklı model ailelerinin karşılaştırılması ve seçimi, MCP sunucuları, beceri ve iş akışı otomasyonu, terminal durum arayüzü araçları, sesli asistan projesi ve sohbet arşivi denetim/özetleme sistemleri.</p>
+
+<h3>Veri kurtarma, korpus ve bilgi mühendisliği</h3>
+<p>Üç yıla yayılan konuşma ve çalışma arşivinin kurtarılması: yüzlerce konuşmanın tek sorgulanabilir JSON korpusuna dönüştürülmesi, ayrıştırma ve doğrulama scriptleri, zaman çizelgesi ve profil çıkarımı, konu bazlı özetleme. Bilgi tarafında varlık-kavram-kaynak yapısında Obsidian tabanlı bilgi kasası; JSON şema düzeltme, CSV/UTF-8 veri dönüşümü ve toplu katalog üretimi araçları.</p>
+
+<h3>Piyasa altyapıları ve otonom ticaret</h3>
+<p>Üç hat üzerinde çalışıldı: tahmin piyasası (Polymarket) tarama, arbitraj ve emir yürütme çatısı; kaldıraçlı kripto ticaret çekirdeği (Binance ve Hyperliquid); MetaTrader 5 üzerinde XAUUSD/NAS100 algoritmik ticaret. Ortak bileşenler: sinyal motoru, kesintisiz yürütme daemon servisi, risk motoru (pozisyon limitleri, drawdown koruması, acil durdurma), bar replay tabanlı backtest, emir akışı analitiği, funding ve carry takibi, momentum sıralama ve sepet kurgusu, kesitsel analitik, volatilite rejim sınıflandırıcı, piyasa verisi kaydedici, equity ve PnL günlüğü, canlı sonuç geri beslemesi, bileşik getiri regülatörü ve canlı izleme panelleri. Ayrıca teknik gösterge araştırması, portföy analizi ve Bitcoin madencilik/kontrol yazılımı kurulumu. Strateji, parametreler ve sinyal kaynakları private tutulur.</p>
+
+<h3>E-ticaret ve iş otomasyonu</h3>
+<p>Shopify tabanlı mağaza operasyonları: toplu ürün kataloğu üretimi (CSV/UTF-8 dönüşüm hatları), script destekli mağaza yönetimi, uluslararası satış planlaması, ürün görünürlüğü ve operasyon akışlarının düzeltilmesi. Ayrıca otomatik B2B kazanç sistemi tasarımı, iş süreçleri otomasyonu ve kurumsal iletişim/marka altyapısı çalışmaları.</p>
+
+<h3>Web, arayüz ve tasarım sistemleri</h3>
+<p>Kimlik ve platform sitelerinin birden çok nesli; renk, tipografi ve durum tanımlarını içeren tasarım token setleri; yeniden kullanılabilir arayüz kitleri; React tabanlı arayüz sorunlarının çözümü, SQL panel düzenlemeleri ve Streamlit tabanlı iç araçlar; erişilebilirlik ve azaltılmış hareket desteği; Cloudflare Workers ve Pages üzerinde dağıtım; arama görünürlüğü ve teknik SEO çalışmaları.</p>
+
+<h3>3B üretim, render ve görsel tasarım</h3>
+<p>Blender üzerinde Python ile pipeline otomasyonu: sahne kurulumu, materyal ve doku paketleri, scriptli üretim ve dışa aktarma. Otomotiv görselleştirme (gece sahnesi ve stüdyo render çalışmaları), poster ve kapak tasarımı, logo ve marka kimliği setleri, fotoğraf düzenleme ve stil aktarımı, drone ve kapak görselleri.</p>
+
+<h3>Masaüstü araçlar ve sistem otomasyonu</h3>
+<p>Windows pencere ve sekme aktivite izleyicisi, PowerShell ve Python otomasyon scriptleri, süreç/kaynak izleme ve güç yönetimi ayarlamaları, belge işleme çalışmaları (e-fatura ve e-arşiv PDF), veri çekme araçları (video platformları ve web kaynakları).</p>
+
+<p><em>Summary in English:</em> Three years of continuous build work (126 archived technical threads, mid-2024 to mid-2026) across: offensive security (Kali, Nuclei scanning, bug-bounty tooling, DPI analysis, encryption apps, cloud IAM/MFA); live-data infrastructure and geospatial visualization (fsahin.com World Terminal, 16 real feeds on a single Cloudflare Worker); applied AI (fully offline local LLM with a hand-built RAG pipeline: BM25 indexing, hybrid reranking, contextual chunk prefixes, boundary scoring, benchmark harness; multi-persona reasoning councils, autonomous agent modes, prompt engineering, MCP servers, voice assistant); data recovery and corpus engineering; market infrastructure and autonomous trading (prediction markets, leveraged crypto, MetaTrader 5, with signal engines, execution daemons, risk layers, backtesting, order-flow and funding analytics, regime classification and live monitoring panels; strategies private); e-commerce operations (Shopify catalog pipelines, CSV/UTF-8 tooling, international sales planning, B2B automation); design systems and frontend engineering; Blender 3D pipelines and automotive rendering; and desktop/system automation.</p>
+
+<h2>3. Öne çıkan depolar</h2>
 
 <div class="proj">
 <h3><a href="https://github.com/baranfiratsahin/Deprem-yangin-acil-offline-iletisim-agi">Deprem ve Yangın Acil Çevrimdışı İletişim Ağı</a></h3>
@@ -146,7 +178,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--edge);color:v
 <span class="meta">PYTHON · TILE PIPELINE · TASARIM TOKEN'LARI · BLENDER</span>
 </div>
 
-<h2>3. Teknik yığın</h2>
+<h2>4. Teknik yığın</h2>
 <table>
 <tr><td>Güvenlik</td><td>Kali Linux, penetrasyon testi, zafiyet değerlendirmesi, sistem sertleştirme, BT operasyonları</td></tr>
 <tr><td>Ön yüz</td><td>Vanilla JavaScript, Leaflet, SVG, CSS mimarisi, erişilebilirlik ve azaltılmış hareket desteği</td></tr>
@@ -156,7 +188,7 @@ footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--edge);color:v
 <tr><td>Diller</td><td>JavaScript, Python, PowerShell, MQL5</td></tr>
 </table>
 
-<h2>4. Kaynaklar</h2>
+<h2>5. Kaynaklar</h2>
 <ul>
 <li>Açık depolar: <a href="https://github.com/baranfiratsahin">github.com/baranfiratsahin</a></li>
 <li>Canlı sistem: <a href="https://fsahin.com/">fsahin.com</a> · teknik özet: <a href="https://fsahin.com/about">fsahin.com/about</a></li>
